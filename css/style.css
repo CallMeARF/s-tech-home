@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand img {
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.8));
+}
+
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-image: url(../img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+
+.jumbotron h1,
+.jumbotron p {
+    color: #343a40;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    font-weight: 200;
+    font-size: 6vmax;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+/* Hero */
+.hero {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 60px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content img {
+    width: 150px;
+}
+
+.hero-content h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Info Panel */
+.info-panel {
+    border-radius: 12px;
+    margin-top: -100px;
+    /* background-color: white; */
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+
+.info-panel .card {
+    position: relative;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.info-panel .card img {
+    filter: brightness(30%);
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+/* Services Panel */
+.services-panel-head {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.services-panel-head h4 {
+    font-size: 6vmax;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.services-panel-head h4 span {
+    font-weight: 500;
+}
+
+.services-panel-body {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+}
+
+.services-panel-body .service-item {
+    display: flex;
+    align-items: center;
+}
+
+.services-panel-body .service-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.services-panel-body .service-item h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+/* PV */
+.pv {
+    margin-top: 120px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 80%;
+    padding-bottom: 48.9%;
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Jika pakai tag video, ganti iframe dg video */
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.stats-row {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.stat-box {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: #f8f9fa;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-box:hover {
+    background: #e9ecef;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stat-box h3,
+.stat-box p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-top: 5px;
+}
+
+.stat-box p {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Footer */
+footer .negative-left-margin {
+    margin-left: -7px;
+}
+
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+.tombol-our {
+    font-size: 2.5vmax;
+}
+
+
+/* Desktop */
+@media (min-width: 992px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 15px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .nav-link:last-child {
+        margin-right: 0;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    }
+
+    .navbar-brand img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .jumbotron {
+        margin-top: -85px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 5vmax;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .info-panel .row .kotak {
+        margin-bottom: 0 !important;
+    }
+
+    .services-panel-head h4 {
+        font-size: 3vmax !important;
+    }
+
+    .services-panel-body .service-item img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    .services-panel-body .service-item h4 {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .video-wrapper {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+
+    footer .kolom1-isi {
+        width: 300px;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .info-panel .row .kotak {
+        margin-bottom: 0 !important;
+    }
+
+    .services-panel-head h4 {
+        font-size: 5vmax;
+    }
+}
