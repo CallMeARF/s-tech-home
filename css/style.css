@@ -32,7 +32,6 @@
 .jumbotron .container {
     position: relative;
     z-index: 1;
-    margin: auto;
 }
 
 .jumbotron::after {
@@ -74,6 +73,7 @@
     color: #fff;
     text-align: center;
     padding: 0 20px;
+    margin-top: 60px;
 }
 
 .hero-content {
@@ -139,14 +139,14 @@
 }
 
 .services-panel-head h4 {
-    font-size: 20px;
-    font-weight: lighter;
+    font-size: 6vmax;
+    font-weight: 200;
     text-transform: uppercase;
     margin-top: 30px;
 }
 
 .services-panel-head h4 span {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .services-panel-body {
@@ -355,6 +355,6 @@ footer .negative-left-margin {
     }
 
     .services-panel-head h4 {
-        font-size: 20px !important;
+        font-size: 5vmax !important;
     }
 }
