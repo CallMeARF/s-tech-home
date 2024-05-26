@@ -32,6 +32,7 @@
 .jumbotron .container {
     position: relative;
     z-index: 1;
+    margin: auto;
 }
 
 .jumbotron::after {
@@ -73,7 +74,6 @@
     color: #fff;
     text-align: center;
     padding: 0 20px;
-    margin-top: 60px;
 }
 
 .hero-content {
@@ -139,14 +139,14 @@
 }
 
 .services-panel-head h4 {
-    font-size: 6vmax;
-    font-weight: 200;
+    font-size: 20px;
+    font-weight: lighter;
     text-transform: uppercase;
     margin-top: 30px;
 }
 
 .services-panel-head h4 span {
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .services-panel-body {
