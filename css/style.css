@@ -139,7 +139,7 @@
 }
 
 .services-panel-head h4 {
-    font-size: 6vmax;
+    font-size: 20px;
     font-weight: 200;
     text-transform: uppercase;
     margin-top: 30px;
@@ -355,6 +355,6 @@ footer .negative-left-margin {
     }
 
     .services-panel-head h4 {
-        font-size: 5vmax !important;
+        font-size: 5vmax;
     }
 }
