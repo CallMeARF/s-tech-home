@@ -355,6 +355,6 @@ footer .negative-left-margin {
     }
 
     .services-panel-head h4 {
-        font-size: 5vmax;
+        font-size: 20px !important;
     }
 }
