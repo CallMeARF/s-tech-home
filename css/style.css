@@ -32,6 +32,7 @@
 .jumbotron .container {
     position: relative;
     z-index: 1;
+    margin: auto;
 }
 
 .jumbotron::after {
@@ -73,7 +74,6 @@
     color: #fff;
     text-align: center;
     padding: 0 20px;
-    margin-top: 60px;
 }
 
 .hero-content {
@@ -238,19 +238,79 @@
 }
 
 /* Footer */
+footer {
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
 footer .negative-left-margin {
     margin-left: -7px;
 }
 
-
-/* Utility */
-.tombol {
-    text-transform: uppercase;
-    border-radius: 40px;
+footer .medsos-logo {
+    margin-left: -30px;
 }
 
-.tombol-our {
-    font-size: 2.5vmax;
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Resposivitas */
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    .footer-col {
+        flex: 0 0 22%;
+        max-width: 24%;
+        margin: 0 1%;
+    }
+
+    .footer-col h5 {
+        font-size: 1rem;
+    }
+
+    .footer-col small {
+        font-size: 0.7rem;
+    }
+
+    .footer-col .slogan {
+        font-size: 0.6rem;
+    }
+
+    footer .medsos-logo {
+        margin-left: -35px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .footer-col {
+        flex: 0 0 22%;
+        max-width: 22%;
+        margin: 0 1.5%;
+    }
+
+    .footer-col small {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .info-panel .row .kotak {
+        margin-bottom: 0 !important;
+    }
+
+    .services-panel-head h4 {
+        font-size: 5vmax;
+    }
 }
 
 
@@ -341,20 +401,35 @@ footer .negative-left-margin {
         width: 100%;
         margin: 0;
     }
-
-    footer .kolom1-isi {
-        width: 300px;
-    }
-
 }
 
-/* Tablet */
-@media (min-width: 768px) {
-    .info-panel .row .kotak {
-        margin-bottom: 0 !important;
+
+@media (min-width: 1200px) {
+    .footer-container {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        overflow-x: hidden;
     }
 
-    .services-panel-head h4 {
-        font-size: 5vmax;
+    .footer-col {
+        flex: 0 0 20%;
+        max-width: 20%;
+        margin: 0 2.5%;
+    }
+
+    .footer-col h5 {
+        font-size: 1.2rem;
+    }
+
+    .footer-col small {
+        font-size: .8rem;
+    }
+
+    .footer-col .medsos-header {
+        margin-left: 30px;
+    }
+
+    footer .medsos-logo {
+        margin-left: 0;
     }
 }
