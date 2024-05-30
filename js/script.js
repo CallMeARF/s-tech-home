@@ -1,8 +1,8 @@
 // Responsif logo
 document.addEventListener('DOMContentLoaded', function () {
     const logo = document.getElementById('logo-nav');
-    const desktopLogo = '/img/logo/logo.svg';
-    const mobileLogo = '/img/logo/logo-mobile.svg';
+    const desktopLogo = 'img/logo/logo.svg';
+    const mobileLogo = 'img/logo/logo-mobile.svg';
     const mediaQuery = window.matchMedia('(max-width: 992px)');
 
     function updateLogo() {
