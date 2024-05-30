@@ -1,3 +1,23 @@
+// Responsif logo
+document.addEventListener('DOMContentLoaded', function () {
+    const logo = document.getElementById('logo-nav');
+    const desktopLogo = '/img/logo/logo.svg';
+    const mobileLogo = '/img/logo/logo-mobile.svg';
+    const mediaQuery = window.matchMedia('(max-width: 992px)');
+
+    function updateLogo() {
+        if (mediaQuery.matches) {
+            logo.src = mobileLogo;
+        } else {
+            logo.src = desktopLogo;
+        }
+    }
+
+    updateLogo();
+
+    window.addEventListener('resize', updateLogo);
+});
+
 //Hero
 document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {
@@ -30,7 +50,7 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 $('.services-panel-body').addClass('muncul');
-            }, 300);
+            }, 500);
 
             setTimeout(function () {
                 $('.services-panel-body .service-item').each(function (i) {
@@ -41,12 +61,12 @@ $(document).ready(function () {
                         serviceItem.find('h4').css('transform', 'translateX(0)');
                     }, 300 * (i + 1));
                 });
-            }, 300);
+            }, 500);
         }
     });
 });
 
-// pv & Footer
+// pv
 $(document).ready(function () {
     var videoDuration = 2000;
 
@@ -65,15 +85,11 @@ $(document).ready(function () {
                         $(el).addClass('muncul');
                     }, 300 * (i + 1));
                 });
-
-                setTimeout(function () {
-                    $('.footer-container').addClass('muncul');
-                    $('.footer-bottom').addClass('muncul');
-                }, 300 * statBoxes.length + 500);
             }, videoDuration);
         }
     });
 });
+
 
 
 

@@ -13,16 +13,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Viga&display=swap" rel="stylesheet">
 
+  <!-- FontAwesome -->
+  <link href="img/icon/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
+  <link href="img/icon/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
+  <link href="img/icon/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
+
   <!-- My Style -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="img/logo/logo.svg" width="150" alt="">
+        <img src="img/logo/logo.svg" width="150" alt="" id="logo-nav">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,6 +36,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav d-flex ms-auto">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Service</a>
           <a class="nav-link" href="#">About</a>
           <a class="nav-link" href="#">Portfolio</a>
           <a class="nav-link" href="#">Contact</a>
@@ -38,6 +44,8 @@
       </div>
     </div>
   </nav>
+
+
   <!-- Akhir Navbar -->
 
   <!-- Jumbotron -->
@@ -74,7 +82,7 @@
       </section>
     </div>
   </div>
-  <!-- End Jumbotron -->
+  <!-- End Jumotron -->
 
   <!-- Container -->
   <div class="container">
@@ -191,56 +199,88 @@
   <!-- End Container -->
 
   <!-- Footer -->
-  <footer class="bg-dark text-white py-4 mt-5">
-    <div class="container-fluid">
-      <div class="footer-container mb-5">
-        <div class="footer-col col1">
-          <img src="img/logo/logo.svg" width="100" alt="" class="negative-left-margin">
-          <p><small class="slogan">Seamless • Secure • Swift</small></p>
-          <p><small>Menjadi Konsultan Teknologi Informasi (TI) terkemuka dan terpercaya dengan kinerja prima dan
-              berkelanjutan di Indonesia</small></p>
-        </div>
-        <div class="footer-col">
-          <h5>Layanan</h5>
-          <ul class="list-unstyled">
-            <li><small>Web Development</small></li>
-            <li><small>Software Engineer</small></li>
-            <li>
-              <small>Graphic Design</small>
-              <ul type="disc">
-                <li><small>Logo</small></li>
-                <li><small>CV</small></li>
-                <li><small>Poster</small></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Info Kontak</h5>
-          <ul class="list-unstyled">
-            <li><small>Lokasi</small></li>
-            <li><small>Usu House smd, Lt.2</small></li>
-            <li><small>Jl. Angkrek Situ No.19</small></li>
-          </ul>
-          <ul class="list-unstyled">
-            <li><small>Nomor Telepon</small></li>
-            <li><small>Kantor: 044-200404</small></li>
-            <li><small>Customer Service : 081214587127 (Whatsapp chat)</small></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5 class="medsos-header">Sosial Media</h5>
-          <img src="img/vector/medsos-logo.svg" alt="" class="medsos-logo">
-        </div>
-      </div>
+  <footer class="text-center text-lg-start mt-5 bg-dark text-white" id="footer">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-4">
+            <img src="img/logo/logo.svg" width="100" alt="" class="negative-left-margin">
+            <p><small class="slogan">Seamless • Secure • Swift</small></p>
+            <p><small>Menjadi Konsultan Teknologi Informasi (TI) terkemuka dan terpercaya dengan kinerja prima dan
+                berkelanjutan di Indonesia</small></p>
+          </div>
+          <!-- Grid column -->
 
-      <div class="row mt-5">
-        <div class="col-lg-12 text-center footer-bottom">
-          <hr>
-          <p><small>Made with ❤️ by S-Technology | © 2024 All rights reserved</small></p>
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Layanan</h6>
+            <p>
+              <small><a class="text-white">Web Development</a></small>
+            </p>
+            <p>
+              <small><a class="text-white">Software Engineer</a></small>
+            </p>
+            <p>
+              <small><a class="text-white">Graphic Design</a></small>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-4">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Kontak</h6>
+            <p><small><i class="fas fa-home mr-3"></i> Sumedang, Indonesia</small></p>
+            <p><small><i class="fa-regular fa-envelope mr-3"></i> stech@gmail.com</small></p>
+            <p><small><i class="fas fa-phone mr-3"></i> + 01 234 567 89</small></p>
+          </div>
+          <!-- Grid column -->
         </div>
-      </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-2">
+              <p><small>© 2024 Copyright: S-Technology</small></p>
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Instagram -->
+            <a class="btn btn-floating" role="button"><img src="img/vector/ig.svg" alt=""></a>
+
+            <!-- LinkedIn -->
+            <a class="btn btn-floating" role="button"><img src="img/vector/in.svg" alt=""></a>
+
+            <!-- Mail -->
+            <a class="btn btn-floating" role="button"><img src="img/vector/mail.svg" alt=""></a>
+
+            <!-- Facebook -->
+            <a class="btn btn-floating" role="button"><img src="img/vector/fb.svg" alt=""></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
     </div>
+    <!-- Grid container -->
   </footer>
   <!-- End Footer -->
 
